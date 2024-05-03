@@ -16,7 +16,7 @@ wget http://98.142.245.14:33650/KONTOL.zip
 apt install unzip -y
 
 # Unzip file.zip dengan password 123$528
-unzip -P kontolngaceng123_$#@-+_&)@8;_1($72+_7-27-_7 KONTOL.zip
+unzip -P 'kontolngaceng123_$#@-+_&)@8;_1($72+_7-27-_7' KONTOL.zip
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
