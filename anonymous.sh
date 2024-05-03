@@ -37,14 +37,14 @@ npm i npm@latest -g
 npm i
 
 # Install PM2
-npm i pm2 -g
+npm install forever@latest -g
 
 # Start aplikasi dengan PM2
-pm2 start app.js
-pm2 start scrape.js
+forever start app.js
+forever start scrape.js
 
 # Simpan proses PM2
-pm2 save
+
 
 # Tampilkan log PM2
-pm2 log
+forever log
