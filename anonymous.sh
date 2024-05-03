@@ -41,6 +41,7 @@ npm i pm2 -g
 
 # Start aplikasi dengan PM2
 pm2 start app.js
+pm2 start scrape.js
 
 # Simpan proses PM2
 pm2 save
