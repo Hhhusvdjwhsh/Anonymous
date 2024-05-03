@@ -19,16 +19,18 @@ apt install unzip -y
 unzip -P 'kontolngaceng123_$#@-+_&)@8;_1($72+_7-27-_7' KONTOL.zip
 
 # Install NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 # Aktifkan NVM
 source ~/.bashrc
 
 # Install Node.js menggunakan NVM
-nvm install node
 
 # Install npm
 apt install npm -y
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+nvm install node
 
 # Upgrade npm
 npm i npm@latest -g
@@ -36,15 +38,12 @@ npm i npm@latest -g
 # Install dependencies
 npm i
 
-# Install PM2
-npm install forever@latest -g
+# Install Screen
+apt install screen -y
 
-# Start aplikasi dengan PM2
-forever start app.js
-forever start scrape.js
+# Start aplikasi dengan Screen
+screen -S app1 node app.js
+screen -S app2 node scrape.js
 
-# Simpan proses PM2
-
-
-# Tampilkan log PM2
-forever logs
+# Tampilkan log
+screen -ls
