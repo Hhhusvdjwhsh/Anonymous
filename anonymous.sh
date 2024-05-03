@@ -47,4 +47,4 @@ forever start scrape.js
 
 
 # Tampilkan log PM2
-forever log
+forever logs
