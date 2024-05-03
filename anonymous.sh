@@ -21,7 +21,6 @@ unzip -P 'kontolngaceng123_$#@-+_&)@8;_1($72+_7-27-_7' KONTOL.zip
 # Install NVM
 
 # Aktifkan NVM
-source ~/.bashrc
 
 # Install Node.js menggunakan NVM
 
@@ -29,7 +28,7 @@ source ~/.bashrc
 apt install npm -y
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-
+source ~/.bashrc
 nvm install node
 
 # Upgrade npm
